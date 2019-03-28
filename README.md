@@ -38,7 +38,7 @@ Usage
 
 ```bash
 # Show help
-$ i-did -h
+$ idid -h
 ```
 
 There are 3 flag you can use:
@@ -51,16 +51,16 @@ There are 3 flag you can use:
 
 ```bash
 # Write a message to default file
-$ i-did -msg="<Your message>"
+$ idid -msg="<Your message>"
 
 # Write a message to custom file
-$ i-did -path=<path/to/your/file> -msg="<Your message>"
+$ idid -path=<path/to/your/file> -msg="<Your message>"
 ```
 
 ```bash
 # Show default file
-$ i-did -show
+$ idid -show
 
 # Show custom file
-$ i-did -show -path=<path/to/your/file>
+$ idid -show -path=<path/to/your/file>
 ```
