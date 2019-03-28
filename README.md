@@ -22,12 +22,13 @@ Installation
 1. Download project with
 
 ```bash
-$ go get https://github.com/bihetq/idid
+$ cd $GOPATH/src
+$ git clone git@gitlab.com:btkent/idid.git
 ```
 
 2. Build the package with 
 ```bash
-$ cd $GOPATH/src/github.com/bihet/i-did/
+$ cd <idid>
 $ go install
 ```
 
