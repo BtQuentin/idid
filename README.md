@@ -23,6 +23,13 @@ Installation
 $ go get github.com/BtKent/idid
 ```
 
+Update
+-----------
+
+```bash
+$ go get -u github.com/BtKent/idid
+```
+
 Usage
 -----------
 
@@ -31,13 +38,14 @@ Usage
 $ idid -h
 ```
 
-There are 3 flag you can use:
+There are 4 flags you can use:
 
 | Flag      | Detail                           | Require or not |
 |:---------:|----------------------------------|----------------|
 |```-path```|Path for file (default $HOME/idid)|Optional        |
 |```-msg``` |Message to write                  |Require         |
 |```-show```| Display file                     |Optional        |
+|```-version```| Display version number                     |Optional        |
 
 ```bash
 # Write a message to default file

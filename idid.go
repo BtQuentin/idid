@@ -1,19 +1,26 @@
 package main
 
-import(
-	"fmt"
-	"os"
-	"flag"
-	"io/ioutil"
-	"time"
-	"os/user"
+import (
 	"bufio"
+	"flag"
+	"fmt"
+	"io/ioutil"
+	"os"
+	"os/user"
+	"time"
 )
+
+const Version = 1.2
 
 func check(e error) {
 	if e != nil {
 		panic(e)
 	}
+}
+
+func version() {
+	fmt.Println("+------ Version: ", Version, " ------+")
+	os.Exit(0)
 }
 
 func read(path string) {
@@ -59,9 +66,10 @@ func main() {
 	home := usr.HomeDir + "/idid"
 
 	var (
-		pathPtr = flag.String("path", home, "Path for file")
+		pathPtr    = flag.String("path", home, "Path for file")
 		messagePtr = flag.String("msg", "", "Message to write")
-		showPtr = flag.Bool("show", false, "Use to show the file")
+		showPtr    = flag.Bool("show", false, "Use to show the file")
+		verPtr     = flag.Bool("version", false, "Show the version")
 	)
 	flag.Parse()
 
@@ -69,6 +77,10 @@ func main() {
 		fmt.Println("No arguments\n")
 		fmt.Println("Try lunching with -h to show how to use")
 		os.Exit(3)
+	}
+
+	if *verPtr {
+		version()
 	}
 
 	if *showPtr {
