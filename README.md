@@ -19,19 +19,9 @@ Requirement
 Installation
 -----------
 
-1. Download project with
-
 ```bash
-$ cd $GOPATH/src
-$ git clone git@gitlab.com:btkent/idid.git
+$ go get github.com/BtKent/idid
 ```
-
-2. Build the package with 
-```bash
-$ cd <idid>
-$ go install
-```
-
 
 Usage
 -----------
