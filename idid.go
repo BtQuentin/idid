@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const Version = 1.3
+const Version = 1.2
 
 func check(e error) {
 	if e != nil {
